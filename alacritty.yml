@@ -3,11 +3,17 @@ import:
 selection:
   save_to_clipboard: true
 window:
+  padding:
+    x: 0
+    y: 0
   dynamic_title: true
+  dynamic_padding: true
+  decorations: buttonless
   opacity: 1
   dimensions:
     columns: 120
     lines: 40
+  use_thin_strokes: true
 cursor:
   style:
     shape: Beam
@@ -16,12 +22,21 @@ font:
   size: 16
   normal:
     family: "FiraCode Nerd Font Mono"
+  italic:
+    family: "FiraCode Nerd Font Mono"
 scrolling:
   history: 2000
 
 draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
 key_bindings:
+  - { key: V,        mods: Command,       action: Paste                     }
+  - { key: C,        mods: Command,       action: Copy                      }
+  - { key: Q,        mods: Command,       action: Quit                      }
+  - { key: N,        mods: Command,       action: SpawnNewInstance          }
+  - { key: Return,   mods: Command,       action: ToggleFullscreen          }
   - { key: A,         mods: Alt,       chars: "\x1ba"                       }
   - { key: B,         mods: Alt,       chars: "\x1bb"                       }
   - { key: C,         mods: Alt,       chars: "\x1bc"                       }

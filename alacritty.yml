@@ -1,0 +1,24 @@
+import:
+  - ~/.config/alacritty/themes/tokyo-night.yml
+selection:
+  save_to_clipboard: true
+window:
+  dynamic_title: true
+  opacity: 1
+  dimensions:
+    columns: 120
+    lines: 40
+cursor:
+  style:
+    shape: Beam
+    blinking: Off
+font:
+  size: 16
+  normal:
+    family: "FiraCode Nerd Font Mono"
+scrolling:
+  history: 2000
+
+draw_bold_text_with_bright_colors: false
+custom_cursor_colors: true
+

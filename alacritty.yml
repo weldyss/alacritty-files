@@ -1,3 +1,5 @@
+env:
+  TERM: xterm-256color
 import:
   - ~/.config/alacritty/themes/tokyo-night.yml
 selection:
@@ -5,7 +7,7 @@ selection:
 window:
   padding:
     x: 0
-    y: 0
+    y: 1
   dynamic_title: true
   dynamic_padding: true
   decorations: buttonless
@@ -26,7 +28,6 @@ font:
     family: "FiraCode Nerd Font Mono"
 scrolling:
   history: 2000
-
 draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 mouse_bindings:

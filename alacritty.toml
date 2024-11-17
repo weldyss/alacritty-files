@@ -1,4 +1,4 @@
-import = ["/home/weldyss/.config/alacritty/themes/tokyo-night.toml"]
+import = [ "~/.config/alacritty/themes/tokyo-night.toml" ]
 
 [colors]
 draw_bold_text_with_bright_colors = false
@@ -21,6 +21,43 @@ family = "FantasqueSansM Nerd Font"
 
 [font.italic]
 family = "FantasqueSansM Nerd Font"
+
+[shell]
+# program = "zellij"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{},<>"
+save_to_clipboard = true
+
+[window]
+dynamic_title = true
+dynamic_padding = true
+startup_mode = "Windowed"
+decorations_theme_variant = "None"
+decorations = "None"
+opacity = 0.9
+blur = true
+padding.x = 30
+padding.y = 30
+decorations = "None"
+opacity = 0.98
+
+  [window.dimensions]
+  columns = 120
+  lines = 40
+
+[cursor.style]
+shape = "Beam"
+blinking = "Off"
+
+[font]
+size = 15
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+
+[scrolling]
+history = 10_000
 
 [mouse]
 hide_when_typing = true
@@ -47,3 +84,8 @@ lines = 40
 [window.padding]
 x = 3
 y = 3
+
+[keyboard]
+bindings = [
+  { key = "F11", action = "ToggleFullscreen" }
+]

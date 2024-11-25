@@ -1,4 +1,3 @@
-[general]
 import = [ "~/.config/alacritty/themes/tokyo-night.toml" ]
 
 [colors]
@@ -9,8 +8,11 @@ blinking = "Off"
 shape = "Beam"
 
 [env]
-# TERM = "xterm-256color"
-# program = "zellij"
+TERM = "xterm-256color"
+
+[shell]
+program = "zellij"
+args = ["-l", "welcome"]
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{},<>"
@@ -21,7 +23,7 @@ dynamic_title = true
 dynamic_padding = true
 startup_mode = "Windowed"
 decorations_theme_variant = "None"
-opacity = 0.9
+opacity = 0.98
 blur = true
 padding.x = 0
 padding.y = 0
